@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face{
+    font-family: "karla";
+    src: url("../font/Karla-Bold.ttf");
+    src: url("../font/Karla-Regular.ttf");
+}
+
+body{
+    color:hsl(204, 43%, 93%);
+    font-family: "karla";
+    font-weight: 400;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+
+.container{
+    width: 50%;
+    max-width: 1440px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+h1{
+    padding-bottom: 30px;
+}
+
+h3{
+    padding-bottom: 20px;
+}
+
+p{
+    line-height: 150%;
+}
+
+button{
+    border:none;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: hsl(71, 73%, 54%);
+}
+
+button:hover{
+
+    background-color: hsl(179, 90%, 43%);
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.cyan{
+    color:hsl(179, 62%, 43%) ;
+}
+
+.cyan--background{
+    background-color: hsl(179, 62%, 43%);
+}
+
+.cyanlight--background{
+    background-color: hsl(179, 72%, 43%);
+}
+
+.yellow{
+    color:hsl(71, 73%, 54%);
+}
+
+.grey{
+    color:hsl(204, 43%, 93%);
+}
+
+.grey--background{
+    background-color:hsl(204, 43%, 93%); ;
+}
+
+.blue{
+    color: hsl(218, 22%, 67%);
+}
+
+.white--background{
+    background-color:white ;
+}
+
+.padding{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+}
+
+.margin{
+    margin-top: 50px;
+}
+
+.number{
+    font-size: 3rem;
+}
+
+span{
+    vertical-align: middle;
+    font-size: 1rem;
+    font-weight: 400;;
+}
+
+
+.bold{
+    font-family: "karla";
+    font-weight: 700;
+}
+
+.border--top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.border--left{
+    border-bottom-left-radius: 10px;
+}
+
+.border--right{
+    border-bottom-right-radius: 10px;
+}
+
+.text--margin{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+@media only screen and (max-width:480px){
+
+
+
+    .container{
+        max-width: 375px;
+        width:80%
+    }
+
+    .grid{
+        grid-template-columns: none;
+    }
+
+    .border--left{
+        border-bottom-left-radius: 0px;
+    }
+
+    .border--mobile{
+        border-bottom-left-radius: 10px;
+    }
+}
